@@ -39,7 +39,7 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`nama`, `nim`, `tgl_lahir`) VALUES
-('habil', '2372', '');
+('pramana', '1234567', '');
 
 --
 -- Indexes for dumped tables
