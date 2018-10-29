@@ -1,3 +1,6 @@
+<?php
+$nim = $_GET["nim"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +11,11 @@
 </head>
 <body>
     <form action="Class.php" method="post">
-        Masukan nim<input type="text" name="input1"><br>
+        Masukan nim<input type="text" value="<?php echo $nim ?>" disabled><br>
         Masukan nama<input type="text" name="input2"><br>
-        Pilih Operasi
-        <select name="operasi">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
         <br>
-        <input type="submit" value="Kirim">
+        <input type="hidden" name="input1" value="<?php echo $nim ?>">
+        <input type="submit" name="edit" value="Edit">
     </form>
 </body>
 </html>
